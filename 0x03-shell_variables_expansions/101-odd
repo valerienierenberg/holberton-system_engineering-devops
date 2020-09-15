@@ -1,2 +1,2 @@
 #!/bin/bash
-sed n\;g
+grep -m | cut | grep
