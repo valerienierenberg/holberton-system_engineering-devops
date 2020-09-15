@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n | grep^[13579] | grep | cut -f2
+perl -ne 'print if(++$x)%2'
