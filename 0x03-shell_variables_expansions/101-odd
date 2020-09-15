@@ -1,2 +1,2 @@
 #!/bin/bash
-perl -ne 'print if(++$x)%2'
+grep -d | cut | grep
