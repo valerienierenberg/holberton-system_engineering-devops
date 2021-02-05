@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times using a while loop
+# for 4th iteration, prints "bad luck", for 8th iteration, prints "good luck"
+# case statement must be used
+
+count=1
+while [ $count -le 10 ]
+do
+    if [ $count -eq 4 ]
+    then
+        echo bad luck
+    elif [ $count -eq 8 ]
+    then
+        echo good luck
+    else
+        echo Holberton School
+    fi
+    ((count++))
+done

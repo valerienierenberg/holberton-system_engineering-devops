@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script displays the content of the current directory in a list format...
+# ...where only the part of the name after the first dash is displayed
+# use of for loop is required
+
+filenames=$(ls)
+for eachfile in $filenames
+do
+   echo "$eachfile" | cut -f2 -d'-'
+done

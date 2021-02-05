@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script displays the content of the current directory in a list format...
+# ...where only the part of the name after the first dash is displayed
+# use of for loop is required
+
+FILE="holbertonschool"
+if [ -e "$FILE" ]
+    then
+    echo "holbertonschool file exists"
+    if ! ([ -s "$FILE" ])
+        then
+        echo "holbertonschool file is empty"
+    else
+        echo "holbertonschool file is not empty"
+    fi
+    if [ -f "$FILE" ]
+        then
+        echo "holbertonschool is a regular file"
+    fi
+else
+    echo "holbertonschool file does not exist"
+fi
