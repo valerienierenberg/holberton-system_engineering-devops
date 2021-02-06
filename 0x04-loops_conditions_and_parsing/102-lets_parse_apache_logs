@@ -4,4 +4,4 @@
 # Format: IP HTTP_CODE
 # required to use awk
 
-
+awk '{print $1 " " $9}' apache-access.log
