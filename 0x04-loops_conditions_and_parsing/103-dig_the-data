@@ -5,4 +5,4 @@
 # Ordered from the greatest to the lowest number of occurrences
 # required to use awk
 
-
+awk '{print $1 " " $9}' apache-access.log | tr '[:upper:]' '[:lower:]'| sort | uniq -c
