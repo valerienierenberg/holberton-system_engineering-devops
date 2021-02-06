@@ -4,7 +4,7 @@
 # format given in task
 
 file="/etc/passwd"
-while IFS=":" read -r -a line
+while IFS=':' read -r -a line
 do
     echo "The user ${line[0]} is part of the ${line[3]} gang, lives in\
 ${line[5]} and rides ${line[6]}. ${line[2]}'s place is protected\
