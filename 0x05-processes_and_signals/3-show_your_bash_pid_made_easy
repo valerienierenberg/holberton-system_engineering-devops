@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script displays only the running processes containing the word "bash"
+# (not using ps)
+
+pgrep bash -l
