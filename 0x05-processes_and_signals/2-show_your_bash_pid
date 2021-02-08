@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script displays only the running processes containing the word "bash"
+# (not using pgrep)
+# shellcheck disable=SC2009
+
+ps afux | grep "bash" | less
