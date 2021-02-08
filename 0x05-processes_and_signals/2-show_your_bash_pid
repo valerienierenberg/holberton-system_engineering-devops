@@ -3,4 +3,4 @@
 # (not using pgrep)
 # shellcheck disable=SC2009
 
-ps afux | grep "bash" | less
+ps afux | grep "bash"
