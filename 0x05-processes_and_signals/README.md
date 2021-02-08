@@ -16,6 +16,7 @@ This project covers management of processes, including the following commands an
 * How to kill a process
 * What is a signal
 * What are the 2 signals that cannot be ignored
+    * SIGKILL and SIGSTOP
 
 ## Requirements:
 * Allowed editors: vi, vim, emacs
