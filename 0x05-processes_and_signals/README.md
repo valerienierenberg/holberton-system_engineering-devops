@@ -17,7 +17,7 @@ This project covers management of processes, including the following commands an
 * What is a signal
 * What are the 2 signals that cannot be ignored
 
-# Requirements:
+## Requirements:
 * Allowed editors: vi, vim, emacs
 * All files will be interpreted on Ubuntu 14.04 LTS
 * All files should end with a new line
