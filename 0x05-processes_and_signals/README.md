@@ -1,6 +1,6 @@
 #  0x05-processes_and_signals
 
-## Projeoct Description:
+## Project Description:
 This project covers management of processes, including the following commands and signals:
 * ps
 * pgrep
