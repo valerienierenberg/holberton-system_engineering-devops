@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script attempts to kill the "7-highlander" process
+# (however, it does not work because it is lacking SIGKILL)
+# see file 8-beheaded_process
+
+pkill -f "7-highlander"
