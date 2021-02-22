@@ -40,7 +40,7 @@ Using the project instructions, create a Ruby script that accepts one argument, 
 * 6-phone_number.rb - This task is brought to you by Holberton professional advisor Neha Jain, Senior Software Engineer at LinkedIn.\
 Requirement:\
 The regular expression must match a 10 digit phone number\
-Example:\
+Example:
 ```
 $ ./6-phone_number.rb 4155049898 | cat -e
 4155049898$
@@ -52,7 +52,7 @@ $ ./6-phone_number.rb "415-504-9898" | cat -e
 $
 $
 ```
-\
+
 * 7-OMG_WHY_ARE_YOU_SHOUTING.rb - The regular expression must be only matching: capital letters
 * 100-textme.rb - This exercise was prepared for you by Guillaume Plessis, VP of Infrastructure at TextMe. It is something he uses daily. You can thank Guillaume for his project on Twitter.
 
