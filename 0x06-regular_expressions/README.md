@@ -1,6 +1,6 @@
 # 0x06-regular_expressions
 
-# Project Description:
+## Project Description:
 This project introduces the concept of Regular Expressions
 
 ## Background Context:
