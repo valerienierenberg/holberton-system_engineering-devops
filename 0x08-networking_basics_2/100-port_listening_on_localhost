@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# bash script that listens on port 98 on localhost.
+
+lsof -i :98
