@@ -1,6 +1,6 @@
 # 0x0B-ssh
 
-# Learning Objectives
+## Learning Objectives
     * What is a server
     * Where servers usually live
     * What is SSH
