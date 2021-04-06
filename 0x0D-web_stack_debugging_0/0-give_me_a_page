@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # command used to get apache running on container
 
-sudo service apache start
+sudo service apache restart
