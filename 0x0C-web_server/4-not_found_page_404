@@ -8,7 +8,7 @@
 apt-get update
 apt-get -y install nginx
 echo "Holberton School" > /var/www/html/index.html
-touch /usr/share/nginx/html/my_404.html
-echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/my_404.html
-sed -ie "s/^\tserver_name _;$/\tserver {\n\terror_page 404 \/my_404.html;\n\t\tlocation = \/my_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}/g" /usr/share/nginx/html/my_404.html
+touch /var/www/html/my_404.html
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/my_404.html
+sed -ie "s/^\tserver_name _;$/\tserver {\n\terror_page 404 \/my_404.html;\n\t\tlocation = \/my_404.html {\n\tinternal;\n\t}/g" /var/www/html/my_404.html
 service nginx restart
