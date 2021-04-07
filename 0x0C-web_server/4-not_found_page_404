@@ -5,10 +5,8 @@
 # The page must contain the string Ceci n'est pas une page
 # Using what you did with 3-redirection, write 4-not_found_page_404 so that it configures a brand new Ubuntu machine to the requirements asked in this task
 
-apt-get update
+apt-get -y update
 apt-get -y install nginx
-echo "Holberton School" > /var/www/html/index.html
-touch /var/www/html/my_404.html
-echo "Ceci n'est pas une page" | sudo tee /var/www/html/my_404.html
-sed -ie "s/^\tserver_name _;$/\tserver {\n\terror_page 404 \/my_404.html;\n\t\tlocation = \/my_404.html {\n\tinternal;\n\t}/g" /var/www/html/my_404.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+sed -i '45 i \\terror_page 404 /404.html;' /etc/nginx/sites-available/default
 service nginx restart
