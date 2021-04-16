@@ -38,6 +38,7 @@ frontend http
         bind *:80
 
         bind *:443 ssl crt /etc/ssl/www.valerienierenberg.tech/www.valerienierenberg.tech.pem
+        redirect scheme https code 301 if !{ ssl_fc }
         # test URI to see if it's a letsencrypt request
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         use_backend letsencrypt-backend if letsencrypt-acl
