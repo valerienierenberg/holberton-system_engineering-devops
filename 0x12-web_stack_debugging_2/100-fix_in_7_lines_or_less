@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
-# script that runs the whoami command under the user passed as an argument
+# (7 lines or less) script that configures the container to have nginx running as nginx user, and nginx must be listening on all active IPs on port 8080
 
-sudo su -c whoami -s /bin/sh "$1"
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo sed -ie "1 i user nginx;" /etc/nginx/nginx.conf
+sudo service nginx restart
+
+# sudo su -c sed -ie "1 i user nginx;" /etc/nginx/nginx.conf /bin/sh root
