@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# script that configures the container to have nginx running as nginx user, and nginx must be listening on all active IPs on port 8080
+# (7 lines or less) script that configures the container to have nginx running as nginx user, and nginx must be listening on all active IPs on port 8080
 
-sudo apt-get -y update
-sudo apt-get -y install nginx
+pkill -f apache2
+chown nginx:nginx /etc/nginx/nginx.conf
+chmod 700 /etc/nginx/nginx.conf
 sudo sed -ie "1 i user nginx;" /etc/nginx/nginx.conf
 sudo sed -i 's/80/8080/' /etc/nginx/sites-available/default
-sudo service nginx restart
+su nginx service nginx start
 
 # sudo su -c sed -ie "1 i user nginx;" /etc/nginx/nginx.conf /bin/sh root
