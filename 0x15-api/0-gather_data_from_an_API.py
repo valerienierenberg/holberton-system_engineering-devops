@@ -2,9 +2,9 @@
 """ this module contains a python script that, using the JSONplaceholder
 API, for a given employee ID, returns information about his/her
 todo list progress """
-
 import requests
 from sys import argv
+
 
 if __name__ == '__main__':
     userId = argv[1]
