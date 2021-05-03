@@ -11,7 +11,7 @@ if __name__ == '__main__':
     name = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(userId), verify=False).json()
     # todo variable = grabs all todos (completed or not) for the user passed in
-    todo = requests.get('https://jsonplaceholder.typicode.com/todos?userid={}'
+    todo = requests.get('https://jsonplaceholder.typicode.com/todos?userId={}'
                         .format(userId), verify=False).json()
     completed = []
     for task in todo:
