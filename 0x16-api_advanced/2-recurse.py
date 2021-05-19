@@ -9,6 +9,8 @@ from sys import argv
 
 
 def recurse(subreddit, hot_list=[], after="null"):
+    """ docstring """
+"""
     subreddit = argv[1]
     url = "http://api.reddit.com/r/{}/hot.json??limit=100&after={}".format(
         subreddit, after)
@@ -29,3 +31,4 @@ def recurse(subreddit, hot_list=[], after="null"):
         children = data.get('children')
         hot_list = hot_list + children
         return recurse(subreddit, hot_list, after)
+"""
